@@ -461,6 +461,64 @@
       opacity: 1;
     }
     
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(244, 143, 177, 0.15);
+      padding: 30px;
+      margin: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      flex: 1;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .project-card h3 {
+      color: var(--dark-pink);
+      margin-bottom: 15px;
+    }
+    
+    .project-card p {
+      color: var(--brown);
+      margin-bottom: 20px;
+    }
+    
+    .project-card a {
+      display: inline-block;
+      background: var(--gradient);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .project-card a:hover {
+      background: var(--dark-pink);
+      transform: translateY(-2px);
+    }
+    
+    .footer-social {
+      margin-top: 15px;
+    }
+    
+    .footer-social a {
+      color: var(--dark-pink);
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    .footer-social a:hover {
+      transform: translateY(-3px);
+      color: white;
+    }
+    
     @media (max-width: 768px) {
       .hero-title {
         font-size: 2.2rem;
@@ -510,13 +568,12 @@
 </head>
 
 <body id="Home">
- 
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top navbar-custom">
     <div class="container">
-      <a class="navbar-brand font-weight-bold" href="#Home"
-        class="fas fa-code mr-2"></i>Kiki Dwi
+      <a class="navbar-brand font-weight-bold" href="#Home">
+        <i class="fas fa-code mr-2"></i>Kiki Dwi
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -530,7 +587,7 @@
             <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Batik">Galeri Batik</a>
+            <a class="nav-link" href="#Projects">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Contact">Contact</a>
@@ -547,7 +604,7 @@
       <div class="shape shape-2"></div>
     </div>
     <div class="container">
-      <img src="img/WhatsApp Image 2025-07-24 at 08.32.54_d5a896ab.jpg" alt="Kiki Dwi" class="rounded-circle profile-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 200 200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f8b6c1\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'24\' fill=\'white\'%3EKD%3C/text%3E%3C/svg%3E'" />
+      <img src="img/WhatsApp Image 2026-04-23 at 17.45.03.jpeg" alt="Kiki Dwi" class="rounded-circle profile-img" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\' viewBox=\'0 0 200 200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23f8b6c1\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'24\' fill=\'white\'%3EKD%3C/text%3E%3C/svg%3E'" />
       <h1 class="hero-title">Kiki Dwi Setyaningrum</h1>
       <p class="hero-subtitle">Siswa SMKN 5 Malang | Jurusan PPLG | Pengembang Web & Game</p>
       <a href="#About" class="btn btn-custom mt-3">
@@ -592,8 +649,7 @@
                     Saya tinggal di Jalan Wiroto 2 No. 14, Kota Malang. 
                     Saya aktif di bidang teknologi dan mengikuti ekstrakurikuler Bola Voli. 
                     Hobi saya nonton.
-                            <a href="https://wa.me/qr/AKNXPFUXY4O3E1" class="text-pink-dark font-weight-bold">Contact Me:085872993327</a>
-
+                    <a href="https://wa.me/qr/AKNXPFUXY4O3E1" class="text-pink-dark font-weight-bold">Contact Me:085872993327</a>
                   </p>
                 </div>
               </div>
@@ -608,8 +664,10 @@
                 <span class="skill-badge">UI/UX Design</span>
                 <span class="skill-badge">Game Development</span>
                 <span class="skill-badge">Bola Voli</span>
-                <span class="skill-badge">Membaca</span>
+                <span class="skill-badge">Mendengarkan Musik</span>
+                <span class="skill-badge">menyanyi</span>
                 <span class="skill-badge">Teknologi</span>
+                <span class="skill-badge">makeup</span>
               </div>
             </div>
           </div>
@@ -618,35 +676,36 @@
     </div>
   </section>
 
-  
-  <!-- Batik Section -->
-  <section id="Batik" class="section-custom batik-pattern">
+  <!-- Projects Section -->
+  <section id="Projects" class="section-custom">
     <div class="container">
       <div class="row text-center mb-5">
         <div class="col">
-          <h2 class="section-title text-pink-dark">Explorasi Batik</h2>
-          <p class="section-subtitle">Jelajahi keindahan batik Indonesia</p>
+          <h2 class="section-title text-pink-dark">My Projects</h2>
+          <p class="section-subtitle">Kumpulan proyek pemrograman yang telah saya buat</p>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-md-8">
-          <div class="card card-custom">
-            <div class="card-body text-center">
-              <i class="fas fa-palette contact-icon"></i>
-              <h3 class="card-title text-pink-dark">Galeri Batik Indonesia</h3>
-              <p class="card-text mb-4">
-                Mari mengenal lebih dalam warisan budaya Indonesia yang telah diakui UNESCO. 
-                Jelajahi berbagai motif batik tradisional dari berbagai daerah dengan makna filosofis yang mendalam.
-              </p>
-              <a href="batik.html" class="btn btn-custom">
-                <i class="fas fa-external-link-alt mr-2"></i>Jelajahi Batik
-              </a>
-            </div>
+        <!-- Project 1: Web Portfolio -->
+        <div class="col-md-5">
+          <div class="project-card">
+            <h3>Website Portfolio</h3>
+            <p>Website portofolio pribadi yang menampilkan karya dan profil saya.</p>
+            <a href="index.html">Lihat Project</a>
+          </div>
+        </div>
+        <!-- Project 2: Galeri Batik -->
+        <div class="col-md-5">
+          <div class="project-card">
+            <h3>Website Galeri Batik</h3>
+            <p>Website galeri batik untuk memperkenalkan warisan budaya Indonesia.</p>
+            <a href="batik.html">Lihat Project</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Contact Section -->
   <section id="Contact" class="section-custom">
@@ -667,17 +726,17 @@
           </div>
 
           <form name="WPU-Contact-form">
-            <div class="mb-3">
+            <div class="form-group mb-3">
               <label for="name" class="form-label text-pink-dark font-weight-bold">Nama</label>
               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" required>
             </div>
 
-            <div class="mb-3">
+            <div class="form-group mb-3">
               <label for="email" class="form-label text-pink-dark font-weight-bold">No hp</label>
               <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
             </div>
 
-            <div class="mb-3">
+            <div class="form-group mb-3">
               <label for="pesan" class="form-label text-pink-dark font-weight-bold">Pesan</label>
               <textarea class="form-control" id="pesan" rows="5" name="pesan" required></textarea>
             </div>
@@ -691,11 +750,26 @@
     </div>
   </section>
 
-
   <!-- Scroll to Top Button -->
   <div class="scroll-top">
     <i class="fas fa-arrow-up"></i>
   </div>
+
+  <!-- Footer -->
+  <footer class="fw-bold text-center p-3 footer-custom"> 
+    <div class="container">
+      <p>&copy; 2025 Batik Indonesia</p>
+      <p class="text-pink-dark mb-0">
+        <i class="fas fa-heart text-danger mr-1"></i> created with love by 
+        <a href="https://www.instagram.com/c00sixzz/" class="text-pink-dark font-weight-bold">kiki dwi</a>
+      </p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/c00sixzz/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@miitwokyyy?is_from_webapp=1&sender_device=pc" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://github.com/kikidwii" target="_blank" class="github"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -763,18 +837,6 @@
         }
       });
       
-      // Indicator dot navigation
-      $('.indicator-dot').click(function() {
-        const target = $(this).data('target');
-        $('html, body').animate(
-          {
-            scrollTop: $(target).offset().top - 70,
-          },
-          800,
-          'swing'
-        );
-      });
-      
       // Update active section based on scroll position
       function updateActiveSection() {
         const scrollPos = $(document).scrollTop() + 100;
@@ -788,11 +850,7 @@
           if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight){
             // Update navbar
             $('.nav-link').removeClass('active');
-            $(.nav-link[href="#${sectionId}"]).addClass('active');
-            
-            // Update indicator
-            $('.indicator-dot').removeClass('active');
-            $(.indicator-dot[data-target="#${sectionId}"]).addClass('active');
+            $(`.nav-link[href="#${sectionId}"]`).addClass('active');
           }
         });
       }
@@ -802,10 +860,7 @@
         const hash = window.location.hash;
         if (hash) {
           $('.nav-link').removeClass('active');
-          $('.nav-link[href="${hash}"]').addClass('active');
-          
-          $('.indicator-dot').removeClass('active');
-          $('.indicator-dot[data-target="${hash}"]').addClass('active');
+          $(`.nav-link[href="${hash}"]`).addClass('active');
         }
       }
       
@@ -860,24 +915,5 @@
       }
     });
   </script>
-
-
-    <!-- Footer -->
-  <footer class="fw-bold text-center p-3 footer-custom"> 
-    <div class="container">
-      <p>&copy; 2025 Batik Indonesia </p>
-      <p class="text-pink-dark mb-0">
-      <i class="fas fa-heart text-danger mr-1"></i> created with love by 
-      <a href="https://www.instagram.com/c00sixzz/" class="text-pink-dark font-weight-bold">kiki dwi</a>
-    </p>
-<div class="footer-social">
-              <a href="https://www.instagram.com/c00sixzz/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.tiktok.com/@miitwokyyy?is_from_webapp=1&sender_device=pc" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
-              <a href="https://github.com/kikidwii" target="_blank" class="github"><i class="fab fa-github"></i></a>
-            </div>
-            
-    </div>
-  </footer>
-
 </body>
 </html>
